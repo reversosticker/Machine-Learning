@@ -1,0 +1,5 @@
+def classmincostfun
+intialtheta=zeros(2,1);
+option=optimset('GradObj','on','MaxIter','100');
+[optheta,functionVal,exitFlag]= fminunc(@costfunction,intialtheta,option);
+
